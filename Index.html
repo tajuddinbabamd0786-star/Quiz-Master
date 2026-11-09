@@ -1,0 +1,70 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classroom Quiz Results System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🎓 Classroom Quiz System</h1>
+    <p>Manage Quizzes | Students | Results</p>
+</header>
+
+<div class="container">
+
+    <section class="card">
+        <h2>Create Quiz</h2>
+
+        <input type="text" id="quizTitle"
+        placeholder="Enter Quiz Title">
+
+        <input type="number" id="maxMarks"
+        placeholder="Maximum Marks">
+
+        <input type="number" id="passMarks"
+        placeholder="Pass Marks">
+
+        <button onclick="addQuiz()">Create Quiz</button>
+    </section>
+
+    <section class="card">
+        <h2>Add Student</h2>
+
+        <input type="text" id="studentName"
+        placeholder="Enter Student Name">
+
+        <button onclick="addStudent()">Add Student</button>
+    </section>
+
+    <section class="card results">
+        <h2>Student Quiz Results</h2>
+
+        <div id="marksForm"></div>
+
+        <button onclick="recordMarks()">Record Marks</button>
+
+        <div id="result"></div>
+    </section>
+
+    <section class="card">
+        <h2>Quiz Statistics</h2>
+
+        <div id="statistics">
+            No statistics available.
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Classroom Quiz Results System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
